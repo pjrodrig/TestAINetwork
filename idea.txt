@@ -1,0 +1,88 @@
+Neuron is just a node with links to other nodes
+links are strengthened or weakened over time by positive/negative results
+
+
+n1 is the entry point to the problem
+nx is the chosen action
+
+
+ways to strength or weaken ties
+ignoring attributes to get to same result to discover lack of correlation
+introduce new problem to same tree. if branches are used successfully, strengthen
+
+learning is made by using comparison
+train by giving many variants of problem
+
+
+
+given 4 inputs true or false, pick action 1, 2, or 3
+
+problem 1
+a: t
+b: t
+c: t
+d: t
+
+
+initial node structure
+
+   problem1
+
+
+a1    a2    a3
+
+pick randomly and create loose node bridge
+
+
+problem
+
+
+
+node1 -> a1
+a: t
+b: t
+c: t
+d: t
+
+
+weight is not applied to links until success is measured
+
+bridge strength is determined by number of uses * fitness score
+
+**************
+problem: room navigation
+goal: find exit
+
+a room can either be safe, or unsafe
+if you enter an unsafe room, you die
+
+unsafe rooms have one or more observable properties to them:
+sound of attacker
+smell of attacker
+view of attacker
+
+
+all rooms can have other observable properties:
+sound of something1
+sound of something2
+smell of something1
+smell of something2
+view of something1
+view of something2
+
+
+actions:
+up
+down
+left
+right
+
+
+
+given to the network, nodes/neurons will automatically be made for all possible actions
+if an action is taken, a linking node will be created
+
+
+
+
+
